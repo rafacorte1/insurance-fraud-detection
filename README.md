@@ -41,7 +41,9 @@ This project demonstrates skills in:
 |---|---|
 | **Algorithm** | Random Forest Classifier |
 | **Train/Test Split** | 80% / 20% |
-| **Key Metrics** | Precision, Recall, F1-Score |
+| **Precision** | 0.55 |
+| **Recall** | 0.33 |
+| **F1-Score** | 0.41 |
 | **Explainability** | Feature Importance Chart |
 
 ---
@@ -118,10 +120,13 @@ streamlit run app/app.py
 
 ## 📈 Key Findings
 
-- The dataset presents a fraud rate of approximately **24%**
+- The dataset presents a fraud rate of **24.7%**
+- The average claim amount across all cases is **$52,761.94**
 - Claims involving **Major Damage** incidents show significantly higher fraud rates
 - **Incident type** and **insured occupation** are among the strongest predictors of fraud
-- The Random Forest model achieves strong performance in identifying fraudulent claims
+- The Random Forest model achieved a **Precision of 0.55**, **Recall of 0.33**, and **F1-Score of 0.41** on the test set
+
+> ⚠️ The model's recall indicates room for improvement — future iterations could explore SMOTE for class imbalance handling, hyperparameter tuning, or alternative algorithms such as XGBoost.
 
 ---
 
